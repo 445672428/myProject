@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<task_list xmlns="http://org.shou.quartzManager">
+    <group name="demo" id = "1" disable = "false">
+        <!-- type 显示类型 ：1.表达式,2.时分秒,3.间隔秒,4.间隔分,5.间隔小时 -->
+        <!-- status 调度状态 ：1 运行,2停止(disable=true时 状态必须为2,状态为2时不一定disable为true),3暂停 -->
+        <task_object disable="false" name="演示任务1" id="1-1" class="org.shou.scheduler.job.SchedulerTest" type="1" expression="*/5 * * * * ?" status="1"  >
+            <json_params></json_params>
+            <detailed_description>间隔5秒执行一次</detailed_description>
+        </task_object>
+    </group>
+</task_list>

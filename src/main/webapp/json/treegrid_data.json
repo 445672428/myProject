@@ -1,0 +1,11 @@
+{"total":9,"rows":[
+	{"id":1,"name":"group-Wyoming","status":1},
+	{"id":11,"name":"Albin1","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"task_object":"{\"message\":\"aa\"}","detailed_description":"测试调度","_parentId":1},
+	{"id":12,"name":"Canon2","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":1},
+	{"id":13,"name":"Egbert3","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":1},
+	{"id":2,"name":"group-Washington","status":1},
+	{"id":21,"name":"Bellingham1","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":2},
+	{"id":22,"name":"Chehalis2","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":2},
+	{"id":23,"name":"Ellensburg3","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":2},
+	{"id":24,"name":"Monroe4","status":1,"class":"org.java.shou","expression":"8 * 1 * * ?","type":1,"_parentId":2}
+]}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>
+                logs/log.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+
+    <!--<appender name="businessAudit"
+        class="com.withub.wdp.core.log.business.DBAppender">
+         <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+             <sqlDialect class="ch.qos.logback.core.db.dialect.SybaseAseDialect" />
+            <driverClass>com.sybase.jdbc3.jdbc.SybDriver</driverClass>
+            <url>jdbc:sybase:Tds:192.168.1.12:5000/zxck</url>
+            <user>sa</user>
+            <password></password>
+        </connectionSource>
+    </appender>-->
+    <logger name="org.quartz" level="ERROR" />
+    <!-- root -->
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingFile" />
+    </root>
+</configuration>
